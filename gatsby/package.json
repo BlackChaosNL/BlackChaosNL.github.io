@@ -13,7 +13,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && cp -r ./public/* ../ && rm -r ./public/*",
+    "cleanup": "gatsby clean && sh ./scripts/remove_deployment.sh",
+    "rebuild": "npm run cleanup && npm run deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
