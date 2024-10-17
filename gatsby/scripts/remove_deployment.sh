@@ -12,7 +12,8 @@ remove_list () {
        *.png \
        *.json \
        *.js* \
-       *.html
+       *.html \
+       *.css
        2>/dev/null
 }
 
