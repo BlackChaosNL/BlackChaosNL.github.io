@@ -1,7 +1,5 @@
 #!/bin/bash
 
-currdir=`pwd`
-
 remove_list () {
     rm -r "~partytown" \
           "404" \
@@ -14,7 +12,7 @@ remove_list () {
        *.png \
        *.json \
        *.js* \
-       *.html 
+       *.html
        2>/dev/null
 }
 

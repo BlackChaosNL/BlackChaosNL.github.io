@@ -14,12 +14,13 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "deploy": "gatsby build && cp -r ./public/* ../ && rm -r ./public/*",
-    "cleanup": "gatsby clean && sh ./scripts/remove_deployment.sh",
+    "cleanup": "sh ./scripts/remove_deployment.sh",
     "rebuild": "npm run cleanup && npm run deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@fontsource/titillium-web": "^5.0.20",
     "gatsby": "^5.13.5",
     "gatsby-plugin-emotion": "^8.13.1",
     "gatsby-plugin-image": "^3.13.1",
@@ -29,13 +30,14 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
-    "prettier": "^3.2.5",
+    "prettier": "3.3.2",
     "typescript": "^5.3.3"
   }
 }
