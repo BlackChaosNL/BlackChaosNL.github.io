@@ -24,6 +24,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <li>Worked closely with other teams to deploy projects smoothly.</li>
           </ul>
           I'm a great communicator, team player, and always willing to learn and help others!<br />
+          <h3> Under Construction! </h3>
         </Highlight>
         <Highlight>
           <DecoratedImage />
